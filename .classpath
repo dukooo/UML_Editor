@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="editor"/>
+	<classpathentry kind="src" path="UMLEditor/src"/>
+	<classpathentry kind="lib" path="plantuml.jar"/>
+	<classpathentry kind="lib" path="/Users/dukoqize/Desktop/CISC322/322UML/editor/txtlib.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="UMLEditor/build/classes"/>
+</classpath>

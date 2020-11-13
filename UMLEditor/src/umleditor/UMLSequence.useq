@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.2" icons="true" generate-combined-fragments="true">  
+  <object id="1" language="java" name="umleditor.UMLEditor" project="322UML" 
+    file="/322UML/UMLEditor/src/umleditor/UMLEditor.java" binary="false" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="73" y="0"/>    
+    <execution id="2">      
+      <position height="832" width="0" x="0" y="78"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="769" width="0" x="0" y="120"/>    
+    </execution>    
+    <execution id="6">      
+      <position height="696" width="0" x="0" y="172"/>    
+    </execution>    
+    <execution id="8">      
+      <position height="21" width="0" x="0" y="224"/>    
+    </execution>  
+  </object>  
+  <object id="13" language="java" name="umleditor.MainPanel" project="322UML" 
+    file="/322UML/UMLEditor/src/umleditor/MainPanel.java" binary="false" label="mainPanel" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="10">      
+      <position height="544" width="0" x="0" y="255"/>    
+    </execution>    
+    <execution id="15">      
+      <position height="21" width="0" x="0" y="297"/>    
+    </execution>  
+  </object>  
+  <object id="18" language="java" name="umleditor.EditPane" project="322UML" 
+    file="/322UML/UMLEditor/src/umleditor/EditPane.java" binary="false" label="editBar" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="17">      
+      <position height="440" width="0" x="0" y="338"/>    
+    </execution>    
+    <execution id="20">      
+      <position height="382" width="0" x="0" y="375"/>    
+    </execution>  
+  </object>  
+  <object id="27" language="java" name="umleditor.UMLUtilities" project="322UML" 
+    file="/322UML/UMLEditor/src/umleditor/UMLUtilities.java" binary="false" label="&lt;static&gt;" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="22">      
+      <position height="21" width="0" x="0" y="573"/>    
+    </execution>    
+    <execution id="24">      
+      <position height="21" width="0" x="0" y="659"/>    
+    </execution>    
+    <execution id="26">      
+      <position height="21" width="0" x="0" y="715"/>    
+    </execution>  
+  </object>  
+  <object id="28" language="java" name="umleditor.UMLType" project="322UML" 
+    file="/322UML/UMLEditor/src/umleditor/UMLType.java" binary="false" label="fac" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="12">      
+      <position height="21" width="0" x="0" y="826"/>    
+    </execution>  
+  </object>  
+  <combined-fragment id="29" interaction-operator="ALT">    
+    <interaction-operand id="30" constraint="classesSelectedClassCB.getSelectedItem().equals(&quot;new class&quot;)">      
+      <fragment refId="21"/>    
+    </interaction-operand>    
+    <interaction-operand id="31" constraint="else">      
+      <fragment refId="25"/>      
+      <fragment refId="23"/>    
+    </interaction-operand>  
+  </combined-fragment>  
+  <message id="3" operation="main(java.lang.String[]):void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="UMLEditor()" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="7" operation="Application(java.lang.String)" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="9" operation="MainPanel()" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="11" operation="UMLType()" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="12"/>  
+  </message>  
+  <message id="14" operation="JPanel()" asynchronous="false">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="15"/>  
+  </message>  
+  <message id="16" operation="EditPane()" asynchronous="false">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>  
+  <message id="19" operation="classesApplyBTActionPerformed(java.awt.event.ActionEvent):void" asynchronous="false">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="20"/>  
+  </message>  
+  <message id="21" operation="createClass(java.lang.String,java.lang.String,java.lang.String):java.lang.String" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="22"/>  
+  </message>  
+  <message id="23" operation="renameClass(java.lang.String,java.lang.String,java.lang.String):java.lang.String" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="24"/>  
+  </message>  
+  <message id="25" operation="setClassIsAbstract(java.lang.String,java.lang.String,boolean):java.lang.String" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="26"/>  
+  </message>
+</sequence-diagram>
